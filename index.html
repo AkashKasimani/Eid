@@ -3,23 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eid Mubarak</title>
+    <title>Eid Mubarak Greetings</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        .container { width: 100%; max-width: 600px; margin: auto; background: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { color: #333; }
-        p { color: #666; }
-        img { width: 100%; height: auto; }
-        .button { display: inline-block; padding: 10px 20px; background-color: #2ecc71; color: #fff; text-decoration: none; border-radius: 5px; }
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Base styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #56ab2f, #a8e063);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        /* Content */
+        .content {
+            padding: 25px;
+        }
+        
+        .greeting {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #444;
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        /* Image container */
+        .image-container {
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Offers section */
+        .offers {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #56ab2f;
+        }
+        
+        .offers h2 {
+            color: #56ab2f;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        
+        .offers ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .offers li {
+            margin-bottom: 8px;
+        }
+        
+        /* CTA Button */
+        .cta-container {
+            text-align: center;
+            margin: 30px 0 15px;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #56ab2f, #a8e063);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+        
+        .footer p {
+            margin-bottom: 5px;
+            opacity: 0.8;
+        }
+        
+        .social-icons {
+            margin-top: 10px;
+        }
+        
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                border-radius: 0;
+            }
+            
+            .header h1 {
+                font-size: 26px;
+            }
+            
+            .content {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 style="editable=true">Eid Special Offers</h1>
-        <p style="editable=true">Eid is a time of joy and celebration. We have special offers for you to make it even more special.</p>
-        <img src="https://cdn.pixabay.com/photo/2017/06/09/13/23/ramadan-2386846_1280.jpg" alt="Eid Image" style="editable=true" width="100%">
-        <p style="editable=true">Shop now and get up to 15% off on all Eid gifts.</p>
-        <a href="#" class="button" style="editable=true">Shop Now</a>
+        <div class="header">
+            <h1>Eid Mubarak!</h1>
+            <p>Celebrate the spirit of Eid with joy and blessings</p>
+        </div>
+        
+        <div class="content">
+            <p class="greeting">May this blessed occasion bring peace, happiness, and prosperity to your life.</p>
+            
+            <div class="image-container">
+                <img src="https://cdn.pixabay.com/photo/2017/06/09/13/23/ramadan-2386846_1280.jpg" alt="Eid Celebration" />
+            </div>
+            
+            <div class="offers">
+                <h2>Exclusive Eid Special Offers</h2>
+                <ul>
+                    <li>Enjoy <strong>20% OFF</strong> on all festive collections</li>
+                    <li>Buy 2 items and get <strong>1 FREE</strong> on selected items</li>
+                    <li>Free gift wrapping for all Eid purchases</li>
+                    <li>Special discounts on family gift sets</li>
+                </ul>
+                <p>Offer valid until the end of Eid celebration week!</p>
+            </div>
+            
+            <p>Celebrate this auspicious occasion with our carefully curated Eid collection. From elegant home decor to perfect gifts for your loved ones, we have everything to make your Eid celebrations special.</p>
+            
+            <div class="cta-container">
+                <a href="#" class="button">SHOP EID COLLECTION</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 Eid Collection. All rights reserved.</p>
+            <p>You're receiving this email because you subscribed to our newsletter.</p>
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
